@@ -1,10 +1,13 @@
 {
+  "homepage": "http://mbrodhuber.github.io/Submit-and-Review",
   "name": "react-javascript",
   "version": "1.0.0",
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -16,6 +19,7 @@
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.1.1",
     "path": "^0.12.7",
     "postcss": "^8.4.47",
     "react": "^18.2.0",
